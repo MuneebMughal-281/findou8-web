@@ -1,6 +1,6 @@
 import { useMemo } from "react";
 import { createTheme, ThemeProvider, StyledEngineProvider } from '@mui/material/styles';
-import { palette } from './palette';
+import { palette } from '@src/theme/palette';
 import CssBaseline from '@mui/material/CssBaseline';
 
 // eslint-disable-next-line react/prop-types

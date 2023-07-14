@@ -1,7 +1,8 @@
-// import React from 'react'
 
-export default function Contact() {
+export const Contact = () => {
   return (
-    <div>Contact</div>
-  )
+    <div>
+      Contact
+    </div>
+  );
 }

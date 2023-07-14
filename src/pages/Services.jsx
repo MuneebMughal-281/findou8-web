@@ -1,7 +1,8 @@
-// import React from 'react'
 
-export default function Services() {
+export const Services = () => {
   return (
-    <div>Services</div>
-  )
+    <div>
+      Services
+    </div>
+  );
 }

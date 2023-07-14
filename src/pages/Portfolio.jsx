@@ -1,7 +1,8 @@
-// import React from 'react'
 
-export default function Portfolio() {
+export const Portfolio = () => {
   return (
-    <div>Portfolio</div>
-  )
+    <div>
+      portfolio
+    </div>
+  );
 }
