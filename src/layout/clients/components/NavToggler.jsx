@@ -1,4 +1,5 @@
 import React from 'react';
+import { Menu } from '@mui/icons-material/'
 import { List, SwipeableDrawer, Button, Box } from '@mui/material'
 import { NavbarLinks } from '@src/layout/clients/components/NavbarLinks'
 
@@ -20,16 +21,14 @@ export const NavToggler = () => {
     
     const list = (anchor) => (
         <Box
-            sx={{ width: anchor === 'top' || anchor === 'bottom' ? 'auto' : 250 }}
+            sx={{ width: 300 }}
             role="presentation"
             onClick={toggleDrawer(anchor, false)}
             onKeyDown={toggleDrawer(anchor, false)}
         >
-        <List>
             <div className='mobile-navbar-links'>
                 <List component='nav'>{NavbarLinks}</List>
             </div>
-        </List>
         </Box>
     );
     
@@ -37,7 +36,9 @@ export const NavToggler = () => {
         <div>
             {['right'].map((anchor) => (
             <React.Fragment key={anchor}>
-                <Button onClick={toggleDrawer(anchor, true)}>{anchor}</Button>
+                <Button onClick={toggleDrawer(anchor, true)}>
+                    <Menu className='toggler-icon'/>
+                </Button>
                 <SwipeableDrawer
                     anchor={anchor}
                     open={state[anchor]}

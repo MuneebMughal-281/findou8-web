@@ -1,5 +1,4 @@
 import { Facebook, Instagram, LinkedIn } from '@mui/icons-material'
-// import InstagramIcon from '@mui/icons-material/Instagram';
 import { Link } from 'react-router-dom';
 import { styled } from '@mui/material';
 
@@ -10,9 +9,15 @@ export const TopBar = () => {
     return (
         <div className="topbar">
             <div className="social">
-                <Facebook className='fb'/>
-                <Instagram className='ig'/>
-                <LinkedIn className='li'/>
+                <a href='#' target='_blank'>
+                    <Facebook className='fb'/>
+                </a>
+                <a href='#' target='_blank'>
+                    <Instagram className='fb'/>
+                </a>
+                <a href='#' target='_blank'>
+                    <LinkedIn className='fb'/>
+                </a>
             </div>
             <div className="topbar-btn">
             <NavLinks to='/testimonials'>

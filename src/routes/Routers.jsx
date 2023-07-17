@@ -10,7 +10,6 @@ import  { Careers }  from '@src/pages/Careers';
 export const Routers = () => {
     return(
         <Routes>
-        <Route path='/' element={<FrontEndLyout />} />
         <Route
           path='/'
           element={<FrontEndLyout />}

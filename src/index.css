@@ -1,152 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
-:root{
-    --primary: #D94030;
-    --gray: #f3f3f3;
-    --gray-light: #f3f3f3a4;
-    --transition: cubic-bezier(0, 0, 0.2, 1);
-    --poppins: 'Poppins', sans-serif;
-    --montserrat: 'Montserrat', sans-serif;
-    --fb:#4267B2;
-    --ig:#833AB4;
-    --li:#0072b1;
-}
-*{
-    margin: 0;
-    padding: 0;
-    outline: none;
-    border: none;
-    user-select: none;
-    -webkit-user-select: none;
-}
-body{
-    /* font-family: 'Montserrat', sans-serif; */
-    font-family: 'Poppins', sans-serif;
-}
-img{
+.app{
     width: 100%;
-    height: 100%;
-    object-fit: contain;
-    -o-object-fit: contain;
-    object-position: center;
-    -o-object-position: center;
+    height: auto;
+    overflow-x: hidden;
 }
-.topbar{
-    width: 100%;
-    height: 30px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 5rem;
-    overflow: hidden;
-    background-color: var(--primary);
+.logo{
+    width: 150px;
 }
-.topbar .social{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
-    color: var(--gray-light);
-    transition: color 0.5s var(--transition);
-}
-.topbar .social .fb,
-.topbar .social .ig,
-.topbar .social .li{
-    font-size: 1.2rem;
-    border-radius: 50%;
-}
-.topbar .social .fb:hover{
-    color: var(--fb);
-    transition: color 0.5s var(--transition);
-}
-.topbar .social .ig:hover{
-    color: var(--ig);
-    transition: color 0.5s var(--transition);
-}
-.topbar .social .li:hover{
-    color: var(--li);
-    transition: color 0.5s var(--transition);
-}
-.topbar .topbar-btn {
-    display: flex;
-}
-.topbar .topbar-btn a{
-    font-size: 0.8rem;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 300;
-    border-left: 1px solid var(--gray-light);
-    border-right: 1px solid var(--gray-light);
-    color: var(--gray-light);
-    text-transform: uppercase;
-    padding: 6px 10px;
-    transition: color 0.5s var(--transition);
-}
-.topbar .topbar-btn a:last-child{
-    border-left: none;
-}
-.topbar .topbar-btn a:hover{
-    color: var(--gray);
-    transition: color 0.5s var(--transition);
-
-}
-.main-navbar{
-    width: 100%;
-    height: 75px;
-    overflow: hidden;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-}
-.main-navbar .nav-logo{
-    width: 20%;
-    height: 100%;
-    padding: 0.6rem 1rem;
-}
-.main-navbar .nav-logo img{
-    width: 80%;
-}
-.main-navbar .navbar-links{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 1rem;
-    padding-right: 2rem;
-}
-.main-navbar .navbar-links p{
-    font-size: 0.9rem;
-    font-weight: 400;
-    font-family: var(--poppins);
+.navbar{
+    background-color: transparent;
     color: black;
-    padding: 0.6rem 0.8rem;
-    transition: color 0.5s var(--transition);
 }
-.main-navbar .navbar-links a:hover p{
-    color: var(--primary);
-    transition: color 0.5s var(--transition);
+.MuiButtonBase-root{
+    color: black;
 }
-.main-navbar .nav-toggler{
-    display: none;
-    transition: color 0.5s var(--transition);
-    padding-right: 1rem;
-    cursor: pointer;
-}
-.main-navbar .nav-toggler .toggler-icon{
-    font-size: 2rem;
-}
-@media screen and (max-width: 1024px){
-    .topbar{
-        justify-content: center;
-    }
-    .topbar .topbar-btn{
-        display: none;
-    }
-    .main-navbar .navbar-links{
-        display: none;
-    }
-    .main-navbar .nav-toggler{
-        display: block;
-    }
-}
-@media screen and (max-width: 330px){
-
+.js{
+    justify-content: space-between!important;
 }
