@@ -62,10 +62,7 @@ export const Navbar = () => {
   return (
     <AppBar position='static' className='navbar'>
       <Container maxWidth='xl'>
-        <Toolbar
-          disableGutters
-          sx={{ display: 'flex', justifyContent: 'space-between' }}
-        >
+        <Toolbar disableGutters sx={{}}>
           <Typography
             noWrap
             component={Link}
@@ -134,7 +131,12 @@ export const Navbar = () => {
           >
             <img src={logoImage} alt='Logo' className='logo' />
           </Typography>
-          <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
+          <Box
+            sx={{
+              flexGrow: 1,
+              display: { xs: 'none', md: 'flex', justifyContent: 'flex-end' },
+            }}
+          >
             {pages.map((page, index) => (
               <Button
                 key={index}

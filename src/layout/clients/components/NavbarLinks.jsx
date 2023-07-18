@@ -37,22 +37,5 @@ export const NavbarLinks = () => {
         <ListItemText primary='Contact' />
       </ListItemButtonWrap>
     </List>
-    //     <React.Fragment>
-    //     <NavLinks to='/'>
-    //         <Typography>Home</Typography>
-    //     </NavLinks>
-    //     <NavLinks to='/services'>
-    //         <Typography>Services</Typography>
-    //     </NavLinks>
-    //     <NavLinks to='/portfolio'>
-    //         <Typography>Portfolio</Typography>
-    //     </NavLinks>
-    //     <NavLinks to='/about'>
-    //         <Typography>About Us</Typography>
-    //     </NavLinks>
-    //     <NavLinks to='/contact'>
-    //         <Typography>Contact</Typography>
-    //     </NavLinks>
-    // </React.Fragment>
   );
 };
