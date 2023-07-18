@@ -1,5 +1,5 @@
-// import { Card } from '@src/pages/components/Card';
-import { HeroSlider } from '@src/pages/components/HeroSlider';
+import { Card } from '@src/pages/components/Card';
+// import { HeroSlider } from '@src/pages/components/HeroSlider';
 // import Background from '../assets/images/banners/team.jpg';
 
 // const title = '360° Digital Solutions Under One Roof';
@@ -10,7 +10,15 @@ import { HeroSlider } from '@src/pages/components/HeroSlider';
 export const Home = () => {
   return (
     <div>
-      <HeroSlider />
+      {/* <HeroSlider /> */}
+      <Card />
+      <Card />
+      <Card />
+      <Card />
+      <Card />
+      <Card />
+      <Card />
+      <Card />
       {/* <Header
         background={Background}
         title={title}
@@ -18,7 +26,6 @@ export const Home = () => {
         button={button}
         path={path}
       />
-      <Card />
       <Card />
       <Card />
       <Card />
