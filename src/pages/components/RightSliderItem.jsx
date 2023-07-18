@@ -1,33 +1,57 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
-// Import Swiper styles
+import Freeio from '@src/assets/images/portfolio/freeio.png';
+import BeLeasing from '@src/assets/images/portfolio/BeLeasing.png';
+import BethemeStore from '@src/assets/images/portfolio/BethemeStore.png';
+import DavidJones from '@src/assets/images/portfolio/DavidJones.png';
+import SalientArchi from '@src/assets/images/portfolio/Salient-Architect.png';
+import Salient from '@src/assets/images/portfolio/Salient.png';
+import Uncode from '@src/assets/images/portfolio/Uncode.png';
+import WoodMart from '@src/assets/images/portfolio/WoodMart.png';
 import 'swiper/css';
 import { Autoplay } from 'swiper/modules';
 export const RightSliderItem = () => {
   return (
-    <>
-      <Swiper
-        slidesPerView={3}
-        // spaceBetween={10}
-        loop={true}
-        centeredSlides={true}
-        autoplay={{
-          delay: 2500,
-          disableOnInteraction: false,
-        }}
-        modules={[Autoplay]}
-        className='rightSlider'
-      >
-        <SwiperSlide>Slide 1</SwiperSlide>
-        <SwiperSlide>Slide 2</SwiperSlide>
-        <SwiperSlide>Slide 3</SwiperSlide>
-        <SwiperSlide>Slide 4</SwiperSlide>
-        <SwiperSlide>Slide 5</SwiperSlide>
-        <SwiperSlide>Slide 6</SwiperSlide>
-        <SwiperSlide>Slide 7</SwiperSlide>
-        <SwiperSlide>Slide 8</SwiperSlide>
-        <SwiperSlide>Slide 9</SwiperSlide>
-        <SwiperSlide>Slide 10</SwiperSlide>
-      </Swiper>
-    </>
+    <Swiper
+      spaceBetween={0}
+      slidesPerView={3}
+      slidesPerGroup={1}
+      centeredSlides={true}
+      initialSlide={2}
+      loop={true}
+      effect={'slide'}
+      speed={1200}
+      autoplay={{
+        delay: 0,
+        disableOnInteraction: true,
+      }}
+      accessibility={true}
+      modules={[Autoplay]}
+      className='mySwiper'
+    >
+      <SwiperSlide>
+        <img src={Freeio} alt='' />
+      </SwiperSlide>
+      <SwiperSlide>
+        <img src={BeLeasing} alt='' />
+      </SwiperSlide>
+      <SwiperSlide>
+        <img src={BethemeStore} alt='' />
+      </SwiperSlide>
+      <SwiperSlide>
+        <img src={DavidJones} alt='' />
+      </SwiperSlide>
+      <SwiperSlide>
+        <img src={SalientArchi} alt='' />
+      </SwiperSlide>
+      <SwiperSlide>
+        <img src={Salient} alt='' />
+      </SwiperSlide>
+      <SwiperSlide>
+        <img src={Uncode} alt='' />
+      </SwiperSlide>
+      <SwiperSlide>
+        <img src={WoodMart} alt='' />
+      </SwiperSlide>
+    </Swiper>
   );
 };
