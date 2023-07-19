@@ -1,7 +1,12 @@
-// import React from 'react'
+import { Header } from "@src/pages/components/Header";
 
-export default function Services() {
+const title = "Services Page";
+const discription = "Lorem ipsum dolor sit amet.";
+
+export const Services = () => {
   return (
-    <div>Services</div>
-  )
+    <div>
+      <Header title={title} discription={discription}/>
+    </div>
+  );
 }

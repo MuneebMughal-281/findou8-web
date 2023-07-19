@@ -1,9 +1,9 @@
 import { Header } from "@src/pages/components/Header";
 
-const title = "Contact Page";
+const title = "About Page";
 const discription = "Lorem ipsum dolor sit amet.";
 
-export const Contact = () => {
+export const About = () => {
   return (
     <div>
       <Header title={title} discription={discription}/>

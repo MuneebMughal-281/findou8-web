@@ -1,7 +1,35 @@
-// import React from 'react'
+import { Card } from '@src/pages/components/Card';
+// import { HeroSlider } from '@src/pages/components/HeroSlider';
+// import Background from '../assets/images/banners/team.jpg';
 
-export default function Home() {
+// const title = '360° Digital Solutions Under One Roof';
+// const discription =
+//   'We make good engineers. They, in turn, make good software.';
+// const button = 'lets talk';
+// const path = 'contact';
+export const Home = () => {
   return (
-    <div>Home</div>
-  )
-}
+    <div>
+      {/* <HeroSlider /> */}
+      <Card />
+      <Card />
+      <Card />
+      <Card />
+      <Card />
+      <Card />
+      <Card />
+      <Card />
+      {/* <Header
+        background={Background}
+        title={title}
+        discription={discription}
+        button={button}
+        path={path}
+      />
+      <Card />
+      <Card />
+      <Card />
+      <Card /> */}
+    </div>
+  );
+};

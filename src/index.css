@@ -1,0 +1,61 @@
+img{
+    width: 100%;
+    object-fit:cover ;
+}
+.my-slider{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    overflow: hidden;
+}
+.leftSlider{
+    width: 40%;
+    height: 100%;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+.leftSlider h2{
+    font: 600 1.1rem 'Montserrat', sans-serif;
+}
+.leftSlider p{
+    font: 300 0.6rem 'Poppins', sans-serif;
+    margin: 0.6rem 0 1rem 0;
+}
+.leftSlider button{
+    font: 500 0.9rem 'Poppins', sans-serif;
+    padding: 0.4rem 2rem;
+    border-radius: 35px;
+    outline: none;
+    border: none;
+}
+.mySwiper{
+    width: 60%;
+    height: 100%;
+}
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.swiper-slide img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+}
